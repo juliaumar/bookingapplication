@@ -55,7 +55,10 @@
 			"response": []
 		},
 		{
-			"name": "Get booking/2",
+			"name": "Get booking_Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
@@ -64,8 +67,17 @@
 						"value": "application/json"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "https://restful-booker.herokuapp.com/booking/2",
+					"raw": "https://restful-booker.herokuapp.com/booking/5",
 					"protocol": "https",
 					"host": [
 						"restful-booker",
@@ -74,7 +86,7 @@
 					],
 					"path": [
 						"booking",
-						"2"
+						"5"
 					]
 				}
 			},
